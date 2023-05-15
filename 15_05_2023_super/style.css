@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 0 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  padding: 0 30px;
+}
+
+.navbar_links {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  
+}
+
+.navbar_links a {
+    text-decoration: none;
+
+}
+
+
+.navbar_user {
+  display: flex;
+  /* padding: 0px; */
+  justify-content: space-between;
+  gap: 16px;
+  list-style-type: none;
+  background-color: rgb(228, 228, 221);
+  width: auto;
+  padding: 8px 15px;
+  border-radius: 18px;
+}
+.navbar li {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 2px 8px;
+}
+/* hero */
+
+.buttonHeader{
+    padding:  6px 10px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 0 15px;
+    background-color: rgb(255, 0, 200);
+    color: aliceblue;
+}
+
+.buttonHeader:hover{
+    background-color: blueviolet;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-color: rgb(244, 182, 27);
+  border-radius: 20px;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 0 60px;
+  z-index: -1;
+  gap: 60px;
+}
+
+
+.hero_content {
+  position: relative;
+  width: 50%;
+
+  color: black;
+}
+.image_hero {
+  position: absolute;
+  /* width: 50%; */
+  height: 100%;
+  right: 0;
+  align-items: center;
+  display: flex;
+}
+
+.image_hero img {
+  position: relative;
+  height: 80%;
+  object-fit: contain;
+  cursor: pointer;
+
+ 
+}
+/* inserire hover  e animazioni*/
+
+.productList {
+  margin: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  height: 400px;
+ 
+}
+.card img {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.wrapper_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+    
+}
+
+.button_card{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(234, 230, 19);
+}
