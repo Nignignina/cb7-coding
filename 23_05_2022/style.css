@@ -1,0 +1,10 @@
+.logIn{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
