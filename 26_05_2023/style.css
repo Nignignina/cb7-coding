@@ -8,6 +8,10 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .wrapper .list_title {
   display: flex;
@@ -16,45 +20,121 @@ body {
 }
 
 .wrapper {
-  background: crimson;
+  position: relative;
+ 
   padding: 12px;
   width: 400px;
-}
-.wrapper form {
-  display: flex;
+  align-items: center;
   flex-direction: column;
+  display: flex;
+  height: 700px;
+  top: 0;
+  gap: 10px 0px;
+  justify-content:flex-start
+}
+.wrapperForm {
+  display: flex;
+  /* sistemare un massimo di carateeri */
   gap: 10px;
-  padding: 8px;
-  border: solid 2px chocolate;
+  width: 320px;
+  padding: 0px 8px;
+
   align-items: center;
 }
 
-
-.wrapper input{
-    outline: none;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
+.wrapper input {
+  outline: none;
+  padding: 5px;
+  text-align: right;
+  width: 100%;
+  height: 30px;
+  border-radius: 55px;
+  border: none;
 }
 
-.wrapper .button{
-    text-transform: uppercase;
-    width:auto;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-}
-.removeButton{
-  /* width: 100%; */
-  height: 100%;
+.wrapper input:active {
+  outline: solid #a2d2ff;
+  padding: 5px;
+  background-color: #023047;
+  color: white;
 }
 
-.list{
+.wrapper input:focus {
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+}
+
+.wrapper .button {
+  text-transform: uppercase;
+  position: relative;
+  background-color: black;
+  color: white;
+  border-radius: 80px;
+  height: 43px;
+  width: 45px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.wrapper .button:active {
+  background-color: white;
+  color: black;
+}
+
+
+.list {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  width: 100vh;
+  width: 100%;
   align-items: center;
-  padding:5px;
+  justify-content: center;
   
+  gap: 20px;
+
+  color: black;
+}
+
+.note {
+  text-align: right;
+ display: flex;
+ align-items: center;
+ 
+  border-radius: 40px;
+  background: linear-gradient(
+    297deg,
+    rgba(226, 217, 117, 1) 0%,
+    rgba(227, 176, 120, 1) 41%,
+    rgba(81, 207, 213, 1) 100%
+  );
+  box-shadow: 5px 4px 18px#e3b078;
+  height: 60px;
+  /* position: relative; */
+  margin-top: 20px;
+  width: 350px;
+}
+
+.removeButton {
+  border: none;
+  padding: 10px;
+  background: none;
+  height: 100%;
+  width: 20%;
+}
+
+.removeButton i {
+  width: 20px;
+  color: rgb(255, 255, 255);
+  size: 45px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 35px;
+}
+
+.check i{
+  width: 10px;
+ color: rgb(123, 11, 11);
+ background-color: aquamarine;
 }
