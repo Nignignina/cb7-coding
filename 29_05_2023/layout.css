@@ -1,0 +1,61 @@
+
+
+.mainContainer {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+.mainContent{
+    height: 300vh;
+}
+
+.centralContent {
+ 
+  background-color: brown;
+  height: 100%;
+
+}
+
+.sidebar {
+ 
+  background-color: aqua;
+}
+
+/* mobile and tablet */
+@media screen and (max-width: 1024px) {
+ 
+  .mainContent {
+    width: calc(100% - 88px);
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mainContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+    
+  }
+
+  .mainContent {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    width: 40%;
+    /* display:block; */
+  }
+  .centralContent{
+    width: 60%;
+    height: 100%;
+  }
+}
