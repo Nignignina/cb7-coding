@@ -3,6 +3,8 @@ header {
   top: 0;
   height: 100vh;
   width: 20%;
+  display: flex;
+  flex-direction: column;
 
   padding: 10px 10px;
 }
@@ -10,7 +12,6 @@ header {
 
 .mainlogo {
   display: flex;
-  align-items: center;
 }
 
 .logoWrapper {
@@ -40,6 +41,7 @@ header {
 .navBarItems {
   display: flex;
   height: 50px;
+  width: 50px;
   border-radius: 45px;
   align-items: center;
   color: var(--color-text);
@@ -49,15 +51,6 @@ header {
   fill: var(--color-text);
 }
 
-.icon {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  transition: background-color 0.25s ease;
-}
 .navBarLink text {
   text-decoration: none;
 }
@@ -95,77 +88,89 @@ header {
 .navBarProfileButton {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 20px;
   gap: 10px;
   transition: background-color 0.25s ease;
   border-radius: 45px;
   height: 50px;
+  width: 100%;
   padding: 30px;
-  
-  
 }
 
-.navBarProfileButton:hover{
+.navBarProfileButton:hover {
   background-color: var(--color-hover);
 }
 
 .imgProfile {
-  position: relative;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
- 
+  min-width: 50px;
 }
 
-.imgProfile img{
+.imgProfile img {
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
 }
 
-.textProfile{
+.textProfile {
   font-size: 12px;
 }
 
-.textProfile .name{
+.textProfile .name {
   font-weight: 400;
 }
 
-.textProfile .surname{
+.textProfile .surname {
   font-weight: 200;
 }
 
-.interactionProfile svg{
+.interactionProfile svg {
   fill: var(--color-text);
   width: 30px;
 }
 
+/* .navBarItems:hover {
+  background-color: var(--color-hover);
+} */
+
+.buttonTweet {
+  width: 100%;
+}
+
+/* tablet */
 @media screen and (max-width: 1024px) {
   header {
     width: 88px;
+    align-items: center;
   }
   /* navbar Logo */
   .logoWrapper:active {
     background-color: var(--color-hover);
   }
 
+  .navBarItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .navBarItems .text {
     display: none;
   }
-
-  .icon:active {
+  .navBarItems:active {
     background-color: var(--color-hover);
   }
-  .navBarLink {
-    width: 50px;
-  }
 
-  .navBar {
-    align-items: center;
+  .icon:active {
+    fill: var(--color-text);
   }
+  /* .navBarLink {
+    width: 50px;
+  } */
 
   .logoWrapper {
     width: auto;
@@ -179,17 +184,19 @@ header {
     fill: var(--color-text);
     width: 30px;
   }
-
   .buttonElement .text {
     display: none;
   }
 
-  .textProfile{
+  .textProfile {
     display: none;
-  
   }
-  .interactionProfile{
+  .interactionProfile {
     display: none;
+  }
+  .navBarProfileButton {
+    width: 50px;
+    transform: translateX(-50%);
   }
 }
 
@@ -200,16 +207,16 @@ header {
 
   .buttonElement {
     background-color: var(--color-click);
+    width: 100%;
   }
 
-  /* .icon:hover {
+  .buttonElement svg {
+    display: none;
+  }
+
+  /* .icon svg:hover {
     background-color: var(--color-hover);
   } */
-
-  .navBarItems:hover {
-    background-color: var(--color-hover);
-   
-  }
 
   .mainlogo a {
     display: flex;
@@ -224,5 +231,9 @@ header {
   .buttonElement .text {
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .navBarLink:hover {
+    background-color: var(--color-hover);
   }
 }

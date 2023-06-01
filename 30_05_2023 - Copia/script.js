@@ -1,7 +1,10 @@
 import { GET } from "./http.js";
 import { qS, tweetGen } from "./fn.js";
 
+// const navBaritem = qS(".navBarLink");
 const contentPost = qS(".centralContent");
+const tabs = document.querySelectorAll(".tab");
+console.log(tabs);
 
 GET("posts").then((posts) => {
   console.log(posts);
@@ -19,27 +22,30 @@ let postsList = [];
 // visto che è promise rimarrà pending quindi ha bisogno di un then
 const allData = Promise.all([GET("posts"), GET("users")]);
 
-allData.then((data) => {
-  postsList = data[0].posts;
-  usersList = data[1].users;
-})
-.then(()=>
-postsList.map((post) =>{
-    post.user = usersList.find((user) => user.id === post.userId);;
-    return post;
-}).forEach((post) =>contentPost.append(tweetGen(post)))
-);
+allData
+  .then((data) => {
+    postsList = data[0].posts;
+    usersList = data[1].users;
+  })
+  .then(() =>
+    postsList
+      .map((post) => {
+        post.user = usersList.find((user) => user.id === post.userId);
+        return post;
+      })
+      .forEach((post) => contentPost.append(tweetGen(post)))
+  );
 
-// come far corrisponder users con post? quindi user id = id dei post
-
-// const tweetData = {
-//   id: 1,
-//   image: "https://robohash.org/hicveldicta.png",
-//   firstName: "Pippo",
-//   username: "atuny0",
-//   body: "His mother had always taught him",
-//   reactions: 1,
-// };
+// events
+if (tabs) {
+  tabs.forEach((element) => {
+    element.addEventListener("click", () => {
+      let active = document.querySelector(".active.tab");
+      active.classList.remove("active");
+      element.classList.add("active");
+    });
+  });
+}
 
 // contentPost.append(tweetGen(tweetData));
 

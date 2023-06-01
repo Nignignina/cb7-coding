@@ -24,12 +24,14 @@ export const tweetGen = (tweetData) => {
   profilePost.className = "wrapperImg";
   imgPost.src = tweetData.user?.image || imagePlaceholder;
   wrappertextPost.className = "wrapperText";
-  nameProfile.textContent = tweetData.user?.firstName;
+  nameProfile.textContent = tweetData.user?.firstName + "" +tweetData.user?.lastName;
   nicknameProfile.textContent ="@"+ tweetData.user?.username;
   textPost.textContent =tweetData.body;
   numberReaction.textContent = tweetData.reactions;
-  profileText.className ="userData"
-  nameProfile.className="nameProfile"
+  profileText.className ="userData";
+  nicknameProfile.className="nickname";
+  nameProfile.className="nameProfile";
+
   
   wrapperPost.append(profilePost, wrappertextPost);
   profilePost.append(imgPost);

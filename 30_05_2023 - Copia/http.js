@@ -1,4 +1,3 @@
-
 // const BASE_URL = "https://dummyjson.com/posts";
 const BASE_URL = "https://dummyjson.com/";
 
@@ -8,6 +7,3 @@ export const GET = async (endpoint) => {
 
   return data;
 };
-
-
-
