@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 20px;
+  width: 100%;
+  height: 400px;
+
+  position: relative;
+}
+
+.heroBackground {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.heroBackground img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctaSections {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  background-color: aqua;
+  gap: 10px;
+}
+
+.text {
+  text-shadow: 2px 2px 2px #00000064;
+}
+
+.text.hero {
+  color: var(--color-yellow);
+}
+
+.option {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 2px;
+}
