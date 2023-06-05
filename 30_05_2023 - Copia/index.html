@@ -29,8 +29,8 @@
             <!-- navBar -->
             <nav class="navBar">
               <!-- Home -->
-              <a href="" class="navBarLink">
-                <div class="navBarItems">
+              <a href="#" class="navBarLink">
+                <div class="navBarItems selected dot">
                   <div class="icon">
                     <svg
                       viewBox="0 0 24 24"
@@ -48,7 +48,7 @@
                 </div>
               </a>
               <!-- Explore -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -67,7 +67,7 @@
                 </div>
               </a>
               <!-- notifications -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -86,7 +86,7 @@
                 </div>
               </a>
               <!-- message -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -105,7 +105,7 @@
                 </div>
               </a>
               <!-- List -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -124,7 +124,7 @@
                 </div>
               </a>
               <!-- profile -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -143,7 +143,7 @@
                 </div>
               </a>
               <!-- ALTRO -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -162,7 +162,7 @@
                 </div>
               </a>
               <!-- profile -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -181,7 +181,7 @@
                 </div>
               </a>
               <!-- ALTRO -->
-              <a href="" class="navBarLink">
+              <a href="#" class="navBarLink">
                 <div class="navBarItems">
                   <div class="icon">
                     <svg
@@ -268,34 +268,129 @@
                     src="./assets/png-clipart-black-and-white-penguin-pingu-waiting-at-the-movies-cartoons-thumbnail.png"
                     alt="profile" />
                 </div>
-                <form class="tweetBarContent">
-                  <input
-                    type="text"
-                    id="inputTweet"
-                    placeholder="Che c'è di nuovo?" />
-                  <div class="barActions">
-                    <input
-                      id="tweetButton"
-                      class="tweetSubmit"
-                      type="submit"
-                      value="Twitta" />
-                    <div class="tweetIcons">
-                      <div class="icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                          <g>
-                            <path
-                              d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
+
+                <div class="inputBar">
+                  <div class="options">
+                    <span>Everyone</span>
                   </div>
-                </form>
+                  <form class="tweetBarContent">
+                    <input
+                      type="text"
+                      id="inputTweet"
+                      placeholder="Che c'è di nuovo?" />
+                    <div class="optionexplain">Everyone can read</div>
+                    <div class="barActions">
+                      <div class="tweetIcons">
+                        <div class="icona image"></div>
+                        <div class="icona gif"></div>
+                        <div class="icona list"></div>
+                        <div class="icona smile"></div>
+                        <div class="icona schedule"></div>
+                        <div class="icona location"></div>
+                      </div>
+                      <input
+                        id="tweetButton"
+                        class="tweetSubmit"
+                        type="submit"
+                        value="Twitta" />
+                    </div>
+                  </form>
+                </div>
               </div>
 
               <!-- end tweet bar -->
             </div>
-            <div class="sidebar">sidebar</div>
+            <div class="sidebar">
+              <div class="searchBar">
+                <div class="searchIcon">
+                  <div class="iconaSearch"></div>
+                </div>
+                <input type="text" placeholder="search" class="search" />
+              </div>
+              <!-- end search bar -->
+              <!-- trends -->
+              <div class="trendsElements">
+                <h2 class="trend">Trends for You</h2>
+                <!-- primo -->
+                <div class="trendElement">
+                  <div class="text">
+                    <span class="info">Sports · Trending</span>
+                    <h2 class="title">#Ibrahimovic</h2>
+                    <span class="info">4,228 Tweets</span>
+                  </div>
+                  <div class="interactionTrend">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-1nao33i r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                      <g>
+                        <path
+                          d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <!-- secondo -->
+                <div class="trendElement">
+                  <div class="text">
+                    <span class="info">Music · Trending</span>
+                    <h2 class="title">#Pink Floyd</h2>
+                    <span class="info">10,228 Tweets</span>
+                  </div>
+                  <div class="interactionTrend">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-1nao33i r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                      <g>
+                        <path
+                          d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <!-- Terzo -->
+                <div class="trendElement">
+                  <div class="text">
+                    <span class="info">FOOD · Trending</span>
+                    <h2 class="title">#Dim sum</h2>
+                    <span class="info">5,458 Tweets</span>
+                  </div>
+                  <div class="interactionTrend">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-1nao33i r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                      <g>
+                        <path
+                          d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <!--quarto -->
+                <div class="trendElement">
+                  <div class="text">
+                    <span class="info">Summer · Trending</span>
+                    <h2 class="title">#Italy</h2>
+                    <span class="info">10,228 Tweets</span>
+                  </div>
+                  <div class="interactionTrend">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-1nao33i r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
+                      <g>
+                        <path
+                          d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
           </div>
         </div>
 

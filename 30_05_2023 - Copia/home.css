@@ -10,6 +10,8 @@
 .tabBarTitle {
   margin-bottom: 20px;
   margin-left: 20px;
+  font-size: 16px;
+  padding-top: 10px;
 }
 
 .tabsBar {
@@ -54,55 +56,6 @@
   font-weight: 600;
 }
 
-/* tweetBar */
-.tweetBar {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.tweetBarProfile {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.tweetBarProfile img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.tweetBarContent {
-  width: calc(100% - 68px);
-}
-
-#tweetButton {
-  width: 100%;
-  background: none;
-  border: none;
-  font-size: 20px;
-  outline: none;
-  color: var(--color-text-light);
-}
-
-.barActions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.tweeticons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .icon {
   width: 28px;
   height: 28px;
@@ -118,7 +71,5 @@
 }
 
 .icon:hover svg {
-  fill: var(--color-brand);
-  width: 20px;
   height: auto;
 }

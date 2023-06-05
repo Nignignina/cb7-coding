@@ -1,0 +1,154 @@
+/* tweetBar */
+.tweetBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  gap: 10px;
+}
+.options {
+  width: 100px;
+  border: 1px solid;
+  color: var(--color-hover);
+  padding: 2px 0 2px 10px;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.options:hover {
+  background-color: var(--color-hover);
+}
+
+.options span {
+  color: var(--color-click);
+}
+
+.optionexplain {
+  color: var(--color-click);
+  font-size: 14px;
+  padding: 10px 2px;
+  letter-spacing: 1px;
+}
+
+.optionexplain:hover {
+  background-color: var(--color-hover);
+  border-radius: 45px;
+  width: fit-content;
+}
+.tweetBarProfile {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweetBarProfile img {
+  position: absolute;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-position: center;
+}
+
+.inputBar {
+  width: 80%;
+}
+.tweetBarContent input {
+  width: 100%;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  color: var(--color-text-light);
+}
+
+.barActions {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-top: 1px solid;
+  padding-top: 5px;
+  justify-content: space-between;
+}
+.tweetIcons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.icona {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icona:hover {
+  background-color: #10598a67;
+}
+.image {
+  background-image: url(../assets/icons/img-box-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+
+.gif {
+  background-image: url(./assets/icons/gif-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+
+.list {
+  background-image: url(./assets/icons/list-1540-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+
+.smile {
+  background-image: url(./assets/icons/smile-circle-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+.schedule {
+  background-image: url(./assets/icons/schedule-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+.location {
+  background-image: url(./assets/icons/position-location-map-navigation-gps-direction-arrow-svgrepo-com.svg);
+  background-size: 20px 20px;
+}
+#tweetButton {
+  width: fit-content;
+  padding: 5px 18px;
+  border-radius: 45px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  color: var(--color-text-light);
+  background-color: var(--color-click);
+  height: 35px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.barActions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+
+  align-items: center;
+}
+
+.tweeticons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

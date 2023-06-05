@@ -40,8 +40,7 @@ header {
 
 .navBarItems {
   display: flex;
-  height: 50px;
-  width: 50px;
+
   border-radius: 45px;
   align-items: center;
   color: var(--color-text);
@@ -59,6 +58,7 @@ header {
   transition: background-color 0.25s ease;
   font-weight: 300;
   font-size: 20px;
+  padding: 0 10px;
 }
 
 /* .active{
@@ -134,9 +134,24 @@ header {
   width: 30px;
 }
 
-/* .navBarItems:hover {
-  background-color: var(--color-hover);
-} */
+.navBarItems.selected {
+  font-weight: 600;
+}
+
+.navBarItems.dot .icon::after {
+  content: "";
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+
+  border-radius: 50%;
+  background-color: var(--color-click);
+}
+
+.navBarLink {
+  position: relative;
+}
 
 .buttonTweet {
   width: 100%;
@@ -157,6 +172,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
+    width: 50px;
+    position: relative;
   }
   .navBarItems .text {
     display: none;
@@ -199,8 +217,17 @@ header {
     transform: translateX(-50%);
   }
 }
-
+/* desktop */
 @media screen and (min-width: 1025px) {
+  .navBarItems {
+    gap: 10px;
+    padding: 0 20px 0 10px;
+    width: fit-content;
+  }
+
+  .navBarItems:hover {
+    background-color: var(--color-hover);
+  }
   .logoWrapper:active {
     background-color: var(--color-hover);
   }
@@ -213,10 +240,6 @@ header {
   .buttonElement svg {
     display: none;
   }
-
-  /* .icon svg:hover {
-    background-color: var(--color-hover);
-  } */
 
   .mainlogo a {
     display: flex;
@@ -231,9 +254,5 @@ header {
   .buttonElement .text {
     font-size: 16px;
     font-weight: 600;
-  }
-
-  .navBarLink:hover {
-    background-color: var(--color-hover);
   }
 }
