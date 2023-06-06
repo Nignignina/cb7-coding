@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <script src="./Document_files/http.js.download" type="module"></script>
+  <link rel="stylesheet" href="./Document_files/style.css"></head>
+  <body>
+    <main>
+      <!-- hero -->
+      <div class="hero">
+        <!-- img -->
+        <div class="heroBackground">
+          <img src="./Document_files/background.jpg" alt="hero background">
+        </div>
+        <div class="ctaSections">
+          <h1 class="logo">cities by country</h1>
+          <p class="ctaHero">discover all the cities starting by:</p>
+
+          <select class="option" name="country" id="country">
+            <option value="">--Please choose a Country--</option>
+            <option value="IT">Italia</option>
+            <option value="cat">Francia</option>
+            <option value="hamster">Spagna</option>
+            <option value="parrot">Portgallo</option>
+            <option value="spider">Grecia</option>
+            <option value="goldfish">Germania</option>
+          </select>
+        </div>
+      </div>
+      <div class="countryWrapper">
+        <h2 class="countryTitle">Italy</h2>
+
+        <div id="italy" class="wrapperCountry"><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/italy-rome-84-jpg-jpg_header-15589725.jpg"></div><div class="contentCity"><h2>Roma</h2><div class="backgroundContent"><p class="textContent">Città moderna e ricca di storia, Roma è una vera e propria celebrazione dell'arte e della cultura. Capitale d'Italia e prima grande metropoli dell'uma...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/milan-vittorio-emanuele-ii-gallery-italy-jpg_header-138313.jpeg"></div><div class="contentCity"><h2>Milano</h2><div class="backgroundContent"><p class="textContent">Capitale della moda, del design e simbolo dell'eleganza d'altri tempi, Milano è una città dai mille volti. Famosa per la sua capacità di coniugare sto...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/venice-jpg_header-148016.jpeg"></div><div class="contentCity"><h2>Venezia</h2><div class="backgroundContent"><p class="textContent">Venezia è diversa da qualsiasi altro posto al mondo. Una città che galleggia su una laguna, con canali scintillanti, splendidi palazzi in marmo e chie...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/turin-jpg_header-144980.jpeg"></div><div class="contentCity"><h2>Torino</h2><div class="backgroundContent"><p class="textContent">Città dall’eleganza regale e destinazione d’arte dal gusto contemporaneo, Torino guarda al futuro con estrema modernità, ma senza dimenticare il suo p...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/pisa-jpg_header-138234.jpeg"></div><div class="contentCity"><h2>Pisa</h2><div class="backgroundContent"><p class="textContent">Quando si pensa a Pisa viene subito in mente l’iconica Torre Pendente e la straordinaria piazza in cui si trova, Piazza dei Miracoli. Ma questa bella ...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/italia-mantova-piazza-sordello_header-2272.jpeg"></div><div class="contentCity"><h2>Mantova</h2><div class="backgroundContent"><p class="textContent">Mantova è stata uno dei centri centri principali del Rinascimento italiano ed europeo e grazie al suo patrimonio artistico e culturale è stata inserit...</p></div></div></div><div class="wrapperCity"><div class="imageWrapperHover"></div><div class="wrapperimage"><img src="./Document_files/verona-jpg_header-41907.jpeg"></div><div class="contentCity"><h2>Verona</h2><div class="backgroundContent"><p class="textContent">La città di Romeo e Giulietta, simbolo dell'amore eterno, è un'importante meta turistica in virtù del suo grande patrimonio storico, artisitico e arch...</p></div></div></div></div>
+      </div>
+
+      <!-- <div id="france"><h1>france</h1></div> -->
+
+      <!-- list Francia -->
+    </main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
