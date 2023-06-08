@@ -19,6 +19,10 @@ export const getCities = async () => {
 //   data.map(({ country }) => console.log(country));
 // });
 // selected country by id
+
+// getCities().then((data) => {
+//   data.map(({ meta_description }) => console.log(meta_description));
+// });
 export const country = [60, 82, 139, 66, 64];
 
 getCities()
@@ -26,10 +30,12 @@ getCities()
     console.log(data);
     const france = data.filter((cities) => cities.country.id === 60);
     const italy = data.filter((cities) => cities.country.id === 82);
+    const spain = data.filter((cities) => cities.country.id === 82);
+    console.log(italy);
+
+    MockCountry(france, "#france");
 
     MockCountry(italy, "#italy");
-
-    // MockCountry(france, "#france");
   })
   .catch((error) => {
     console.error("Si è verificato un errore:", error);

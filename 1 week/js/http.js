@@ -19,6 +19,10 @@ export const getCities = async () => {
 //   data.map(({ country }) => console.log(country));
 // });
 // selected country by id
+
+// getCities().then((data) => {
+//   data.map(({ meta_description }) => console.log(meta_description));
+// });
 export const country = [60, 82, 139, 66, 64];
 
 getCities()
@@ -26,24 +30,22 @@ getCities()
     console.log(data);
     const france = data.filter((cities) => cities.country.id === 60);
     const italy = data.filter((cities) => cities.country.id === 82);
+    const spain = data.filter((cities) => cities.country.id === 139);
+    const portugal = data.filter((cities) => cities.country.id === 66);
+    const germany = data.filter((cities) => cities.country.id === 64);
+    console.log(italy);
+
+    MockCountry(france, "#france");
 
     MockCountry(italy, "#italy");
+    MockCountry(spain, "#spain");
+    // MockCountry(greece, "#greece");
+    MockCountry(portugal, "#portugal");
 
-    // MockCountry(france, "#france");
+    MockCountry(germany, "#germany");
+
+    // modalCity(data);
   })
   .catch((error) => {
     console.error("Si è verificato un errore:", error);
   });
-
-// // città ripetute
-// getCities()
-//   .then((data) => {
-//     const filteredCountries = data.filter((city) =>
-//       country.includes(city.country.id)
-//     );
-//     MockCountry(filteredCountries);
-//     // console log
-//   })
-//   .catch((error) => {
-//     console.error("Si è verificato un errore:", error);
-//   });
